@@ -91,7 +91,7 @@ public class DisplayCard {
 				for(int i=0; i<4; i++){
 					String handcard = Integer.toString(deck[i+count]+1);
 					card[i] = new ImageIcon(getClass().getResource("card/"+handcard+".png"));
-				}
+				} 
 				count = count + 4;
 				card1.setIcon(card[0]);
 				card2.setIcon(card[1]);

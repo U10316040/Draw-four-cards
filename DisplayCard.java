@@ -16,9 +16,16 @@ public class DisplayCard {
 	ImageIcon[] card = new ImageIcon[4]; //four images
 	
 	public static void main(String[] args) {
-		
-		DisplayCard window = new DisplayCard();
-		window.frame.setVisible(true);
+		EventQueue.invokeLater(new Runnable() {
+	        public void run() {
+		try {
+			DisplayCard window = new DisplayCard();
+			window.frame.setVisible(true);
+		} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
 		
 	}
   

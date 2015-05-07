@@ -56,7 +56,7 @@ public class DisplayCard {
 		for(int i=0; i<4; i++){
 			String handcard = Integer.toString(deck[i]+1);
 			card[i] = new ImageIcon(getClass().getResource("card/"+handcard+".png"));
-		}
+		} 
 		
 		JLabel card1 = new JLabel(card[0]); //Label with an image
 		card1.setBounds(0, 2, 91, 120); // 0 is x, 2 is y,the card's width is 91,and the card's height is 120
